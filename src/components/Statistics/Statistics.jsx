@@ -15,7 +15,11 @@ const Statistic = ({ good, neutral, bad, total, positivePercentage }) => {
 };
 
 Statistic.propTypes = {
-  label: T.string.isRequired,
-  value: T.number.isRequired,
+  good: T.number.isRequired,
+  neutral: T.number.isRequired,
+  bad: T.number.isRequired,
+  total: T.number.isRequired,
+  positivePercentage: T.number.isRequired,
 };
+
 export default Statistic;
